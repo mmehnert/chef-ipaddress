@@ -20,5 +20,5 @@ template "/etc/network/interfaces" do
   mode "0644"
   action :create
 	variables :interfaces => interfaces
-	notifies :restart, "service[networking]"
+#	notifies :restart, "service[networking]"
 end
